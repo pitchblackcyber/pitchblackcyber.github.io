@@ -2,62 +2,50 @@
 
 ## Overview
 
-Pitch Black Cyber is a modern, dark‑themed website built to represent a cybersecurity consulting and implementation firm. The site emphasizes professionalism, trust, and cutting‑edge technology while maintaining an accessible and visually compelling design.
+The **Pitch Black Cyber** website serves as the official landing page for our cybersecurity consulting and implementation firm. It is designed to establish immediate trust, showcase our core services, and provide an easy way for clients to contact us for engagements or consultations.
 
-This project includes two main files:
+Our site reflects who we are — a team of professionals dedicated to helping businesses navigate cybersecurity, compliance, and IT challenges with confidence. The design combines a sleek, dark aesthetic with neon highlights that symbolize precision, innovation, and the cutting-edge nature of our work.
 
-* **index.html** — the website’s core structure and content
-* **style.css** — a sleek, responsive dark theme with neon accents that elevate visual impact
+## Purpose
 
-The design uses a black‑hole inspired palette with hues of purple, cyan, and magenta to symbolize mystery, precision, and energy — aligning with the company’s name and mission.
+The website acts as both a **marketing presence** and a **client onboarding portal**. It gives visitors a clear understanding of what Pitch Black Cyber offers, the industries we serve, and how to get in touch with our experts.
 
-## Features
+## Key Sections
 
-* **Responsive layout** optimized for desktop and mobile
-* **Sticky navigation bar** with smooth hover transitions
-* **Dynamic hero section** with glowing gradient headline
-* **Card‑based service sections** for clarity and structure
-* **Accessible contact form** with focus and hover states
-* **Minimal dependencies** (pure HTML + CSS, no frameworks)
+* **Hero Section:** Captures attention immediately with a clear mission statement and call-to-action buttons for consultations or quotes.
+* **About Us:** Describes our team’s experience, values, and the problems we solve for clients.
+* **Services:** Highlights our core capabilities, such as penetration testing, RMF & STIG hardening, cloud security, compliance readiness, and incident response.
+* **Contact Form:** Allows clients to reach out quickly for project inquiries or assessments.
+* **Footer:** Provides essential business details, contact info, and links to privacy and terms pages.
 
-## Project Structure
+## Design Philosophy
 
-```
-PitchBlackCyber/
-│
-├── index.html      # Main landing page
-├── style.css       # Custom site styling
-└── assets/         # (Optional) images, icons, or logos
-```
+The design is minimalist yet high-impact — inspired by the concept of a black hole absorbing chaos and returning clarity. It uses a black and deep-purple foundation with cyan and magenta accents to convey control, energy, and trust. The layout is mobile-first, accessible, and optimized for clarity.
 
-## Customization
+## Business Goals
 
-* Update the company description and service list inside `index.html`.
-* Modify the accent colors in `:root` within `style.css` to change the color theme.
-* Add new sections (e.g., Portfolio, Careers) following existing section markup.
+* Establish brand credibility and visibility online
+* Capture potential client leads through clear calls to action
+* Present our capabilities in a professional, memorable way
+* Serve as a foundation for future content such as blogs, resources, and case studies
 
-## Deployment
+## Technical Highlights
 
-This site can be deployed easily using GitHub Pages, Netlify, or any static hosting platform.
+* **Responsive Design:** Seamless experience across desktop, tablet, and mobile
+* **Accessible Forms:** Focus-visible states and clear labeling for usability
+* **Performance Optimized:** Lightweight static site, fast load times
+* **SEO Ready:** Metadata, Open Graph tags, and schema markup for visibility
+* **Static Hosting Friendly:** Deployable to GitHub Pages, Netlify, or any static host
 
-### GitHub Pages Example
+## Future Roadmap
 
-1. Push your code to a GitHub repository.
-2. Go to **Settings → Pages → Source**, select `main` branch, and `/ (root)` folder.
-3. The site will be live at `https://<your‑username>.github.io/pitch‑black‑cyber/`.
+* Integration with **Calendly** for self-service scheduling
+* **Newsletter signup** and resource downloads
+* Expansion to include **case studies**, **blog articles**, and **security frameworks** guidance
+* Integration of **client portal access** for ongoing engagements
 
-## Future Enhancements
+## Brand Message
 
-* Add a **hamburger menu** for small screens
-* Include a **CTA hero button** (e.g., “Schedule a Consultation”)
-* Integrate **contact form backend** via Formspree, Netlify Forms, or custom API
-* Add **animations** with lightweight CSS keyframes or GSAP for interactivity
+> **Pitch Black Cyber** — Navigate cybersecurity, compliance, and IT with expertise and confidence.
 
-## License
-
-This project is provided for educational and personal business use under the MIT License.
-
----
-
-**Created by:** Devin Erickson
-**Project:** Pitch Black Cyber — Navigate Cybersecurity, Compliance, and IT with Expertise and Confidence
+We protect what matters most by helping organizations anticipate threats, close vulnerabilities, and build resilient systems that meet the highest standards of security and compliance.
