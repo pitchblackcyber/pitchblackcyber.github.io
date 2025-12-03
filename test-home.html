@@ -1,156 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pitch Black Cyber - Cybersecurity Consulting & Implementation</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pitch Black Cyber | Cybersecurity Consulting</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <!-- Meta -->
+    <meta
+      name="description"
+      content="Pitch Black Cyber is your trusted partner for cyber security consulting and implementation. Protect your business from online threats."
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <!-- Navigation -->
-    <nav>
-      <ul>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
+  <body id="top">
+    <!-- Site Header / Nav -->
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a href="#top" class="nav-logo">
+          <!-- Optional: add <img src="images/logo.png" alt="Pitch Black Cyber" /> -->
+          <span class="logo-text">Pitch Black Cyber</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Hero / Welcome -->
-    <header id="top">
-      <h1>Welcome to Pitch Black Cyber</h1>
-      <h2>Your trusted partner for cybersecurity consulting and implementation.</h2>
-      <p>
-        Our team of experts helps you protect your business from online threats and secure the systems you rely on every day.
-        From proactive assessments to hands-on implementation, we focus on practical security that actually works.
-      </p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="#contact">Contact Us</a>
-        <a class="btn btn-secondary" href="#services">What We Can Do for You</a>
+    <header class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Pitch Black Cyber</h1>
+        <p class="hero-subtitle">
+          Your trusted partner for cyber security consulting and implementation.
+        </p>
+        <p class="hero-body">
+          Our team of experts is here to help you protect your business from online threats.
+          Contact us today to learn how we can help you secure your digital assets.
+        </p>
+        <div class="hero-cta-row">
+          <a href="#contact" class="btn btn-primary">Contact Us</a>
+          <a href="#services" class="btn btn-secondary">What We Can Do for You</a>
+        </div>
       </div>
     </header>
 
     <main>
-      <!-- What we can do -->
-      <section id="services">
-        <h3>What can we do for you?</h3>
-        <p>
-          Whether you're looking for penetration testing, network security, endpoint protection, or broader cybersecurity guidance,
-          Pitch Black Cyber has the experience and tools to meet your needs.
-        </p>
+      <!-- Services / What we can do for you -->
+      <section id="services" class="section section-services">
+        <div class="section-header">
+          <h2>What can we do for you?</h2>
+          <p>
+            Whether you're looking for penetration testing, network security, endpoint security,
+            or other cyber security solutions, our expert team has the expertise and experience
+            to meet your needs.
+          </p>
+        </div>
 
-        <div class="service-grid">
-          <article class="service-card">
-            <h4>Penetration Testing</h4>
-            <p class="service-tagline">Testing systems for vulnerabilities proactively.</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Penetration Testing</h3>
+            <p class="card-tagline">Testing systems for vulnerabilities proactively.</p>
             <ul>
-              <li>Identify exploitable weaknesses before attackers do</li>
-              <li>Real-world attack simulation and reporting</li>
-              <li>Clear remediation guidance and retesting options</li>
+              <li>Identify weaknesses before attackers do</li>
+              <li>Realistic attack simulations</li>
+              <li>Clear remediation guidance</li>
             </ul>
           </article>
 
-          <article class="service-card">
-            <h4>Network Security</h4>
-            <p class="service-tagline">Protecting networks from cyber threats.</p>
+          <article class="card">
+            <h3>Network Security</h3>
+            <p class="card-tagline">Protecting networks from cyber threats.</p>
             <ul>
+              <li>Secure network architecture</li>
               <li>Firewall and segmentation design</li>
-              <li>Secure remote access and VPNs</li>
-              <li>Monitoring recommendations and logging strategy</li>
+              <li>Monitoring and logging strategies</li>
             </ul>
           </article>
 
-          <article class="service-card">
-            <h4>Endpoint Security</h4>
-            <p class="service-tagline">Securing laptops, desktops, and mobile devices.</p>
+          <article class="card">
+            <h3>Endpoint Security</h3>
+            <p class="card-tagline">Securing devices from digital threats.</p>
             <ul>
-              <li>Hardening baselines and configuration</li>
-              <li>EDR/antivirus selection and rollout support</li>
-              <li>Patch and update strategy to stay ahead of threats</li>
+              <li>Hardening desktops, laptops, and mobiles</li>
+              <li>EDR/antivirus selection and rollout</li>
+              <li>Patch and update guidance</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <!-- Simple FAQ placeholder -->
-      <section id="faq">
-        <h3>FAQ</h3>
-        <dl class="faq-list">
-          <dt>Where is Pitch Black Cyber based?</dt>
-          <dd>We are based in Cache Valley, Utah, and work with clients remotely across the U.S.</dd>
+      <!-- Contact section -->
+      <section id="contact" class="section section-contact">
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>
+            Have a project, question, or concern about your current security posture?
+            Reach out and we’ll get back to you as soon as possible.
+          </p>
+        </div>
 
-          <dt>What types of organizations do you work with?</dt>
-          <dd>We support small to mid-sized businesses, government contractors, and specialized teams needing focused cybersecurity help.</dd>
-
-          <dt>Do you offer ongoing support or just one-time projects?</dt>
-          <dd>We provide both one-time assessments and ongoing support agreements, depending on what you need.</dd>
-        </dl>
-      </section>
-
-      <!-- Blog preview (matches the idea of your Wix blog cards) -->
-      <section id="blog">
-        <h3>From the blog</h3>
-        <p>Insights and practical advice to help you improve your security posture.</p>
-
-        <div class="blog-grid">
-          <article class="blog-card">
-            <h4>The Importance of Applying Updates at Home</h4>
+        <div class="contact-content">
+          <div class="contact-details">
             <p>
-              Why timely updates on your home devices dramatically reduce your risk from common attacks and malware.
+              <strong>Email:</strong>
+              <a href="mailto:info@pitchblackcyber.com">info@pitchblackcyber.com</a>
             </p>
-            <a href="#contact">Ask us how to harden your home and office</a>
-          </article>
 
-          <article class="blog-card">
-            <h4>Why Investing in Cybersecurity is a Smart Business Decision</h4>
-            <p>
-              Strong security isn’t just a cost center—it protects revenue, reputation, and long-term growth.
-            </p>
-            <a href="#contact">Talk about your current risk</a>
-          </article>
+            <div class="social-links">
+              <!-- Replace # with your real URLs if you have them -->
+              <a href="#" aria-label="Pitch Black Cyber on Facebook">Facebook</a>
+              <a href="#" aria-label="Pitch Black Cyber on Instagram">Instagram</a>
+            </div>
+          </div>
 
-          <article class="blog-card">
-            <h4>Why Your Small Business Needs a Cybersecurity Partner</h4>
-            <p>
-              Smaller teams are heavily targeted and often under-resourced. A trusted partner can close that gap.
-            </p>
-            <a href="#contact">Explore partnership options</a>
-          </article>
+          <form class="contact-form">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
         </div>
       </section>
 
-      <!-- Contact / footer-style section -->
-      <section id="contact">
-        <h3>Contact Us</h3>
-        <p>
-          Ready to secure your environment or want to discuss a project?
-          Reach out and we’ll follow up with you as soon as possible.
-        </p>
+      <!-- Blog preview -->
+      <section id="blog" class="section section-blog">
+        <div class="section-header">
+          <h2>From the Blog</h2>
+          <p>Insights to help you protect your business and stay ahead of threats.</p>
+        </div>
 
-        <p>
-          <strong>Email:</strong>
-          <a href="mailto:info@pitchblackcyber.com">info@pitchblackcyber.com</a>
-        </p>
+        <div class="card-grid blog-grid">
+          <article class="card blog-card">
+            <h3>The Importance of Applying Updates to Your Devices at Home</h3>
+            <p class="blog-meta">
+              As a cyber security consulting and implementation company based in Cache Valley,
+              we understand the importance of protecting your digital...
+            </p>
+            <a href="#" class="blog-link">Read more</a>
+          </article>
 
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
+          <article class="card blog-card">
+            <h3>Why Investing in Cybersecurity is a Smart Business Decision</h3>
+            <p class="blog-meta">
+              Safeguarding Your Business and Its Assets in the Digital Age. In today's
+              digital landscape, businesses of all sizes are...
+            </p>
+            <a href="#" class="blog-link">Read more</a>
+          </article>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <article class="card blog-card">
+            <h3>Why It's Essential to Have a Cyber Security Contractor for Your Small Business</h3>
+            <p class="blog-meta">
+              Data breaches and cyber attacks have become increasingly common, and small
+              businesses are particularly vulnerable. To protect your...
+            </p>
+            <a href="#" class="blog-link">Read more</a>
+          </article>
+        </div>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
+        <!-- Simple subscribe area -->
+        <div class="subscribe">
+          <h3>Subscribe to our blog</h3>
+          <p>Join our list and receive updates when new posts are published.</p>
+          <form class="subscribe-form">
+            <label class="sr-only" for="subscribe-email">Email</label>
+            <input
+              id="subscribe-email"
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+            <button type="submit" class="btn btn-secondary">Join</button>
+          </form>
+        </div>
+      </section>
 
-          <input type="submit" value="Send">
-        </form>
+      <!-- FAQ -->
+      <section id="faq" class="section section-faq">
+        <div class="section-header">
+          <h2>FAQ</h2>
+        </div>
+
+        <dl class="faq-list">
+          <div class="faq-item">
+            <dt>Where is Pitch Black Cyber based?</dt>
+            <dd>We are based in Cache Valley, Utah.</dd>
+          </div>
+
+          <div class="faq-item">
+            <dt>What types of organizations do you work with?</dt>
+            <dd>
+              We support small to mid-sized businesses, government contractors, and teams needing
+              focused cybersecurity expertise.
+            </dd>
+          </div>
+
+          <div class="faq-item">
+            <dt>Do you provide ongoing support or one-time projects?</dt>
+            <dd>
+              We offer both one-time engagements and ongoing support, depending on your needs and
+              risk profile.
+            </dd>
+          </div>
+        </dl>
       </section>
     </main>
 
-    <footer>
-      <p>&copy; 2025 Pitch Black Cyber. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>&copy; 2023–2025 Pitch Black Cyber.</p>
+        <p>info@pitchblackcyber.com</p>
+      </div>
     </footer>
   </body>
 </html>
