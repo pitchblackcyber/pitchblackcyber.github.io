@@ -221,3 +221,16 @@ footer {
   header { text-align: left; }
   nav ul { justify-content: center; }
 }
+/* ================================ Pricing Plans / Services Page ================================ */
+
+/* CTA Row */ .cta-row { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; margin-top: 1rem; }
+
+/* Buttons */ .btn { display: inline-block; padding: 0.75rem 1.2rem; border-radius: 12px; font-weight: 700; text-decoration: none; transition: transform 0.15s ease, filter 0.2s ease; } .btn-primary { color: #0b0c10; background: linear-gradient(90deg, var(--accent), var(--brand)); box-shadow: 0 8px 24px rgba(0, 230, 255, 0.25); } .btn-primary:hover { transform: translateY(-1px); filter: brightness(1.08); } .btn-secondary { color: var(--text); background: rgba(20, 23, 36, 0.65); border: 1px solid var(--border); } .btn-secondary:hover { transform: translateY(-1px); filter: brightness(1.1); }
+
+/* Pricing Plans Grid */ .plans-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 1.25rem; } @media (min-width: 900px) { .plans-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* Individual Plan Card */ .plan { background: linear-gradient(180deg, rgba(20, 23, 36, 0.85), rgba(17, 19, 27, 0.85)); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; box-shadow: var(--shadow); transition: transform 0.2s ease, box-shadow 0.2s ease; } .plan:hover { transform: translateY(-3px); box-shadow: 0 18px 45px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.04) inset; }
+
+/* Featured Plan */ .plan-featured { border: 1px solid var(--accent); box-shadow: 0 0 25px rgba(0, 230, 255, 0.25); background: linear-gradient(180deg, rgba(20, 23, 36, 0.95), rgba(17, 19, 27, 0.92)); }
+
+/* Plan Text Styles */ .plan h4 { margin: 0 0 0.5rem; font-size: 1.2rem; } .plan-tagline { color: var(--muted); margin-bottom: 0.75rem; } .plan-price { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.75rem; background: linear-gradient(90deg, var(--accent), var(--brand)); background-clip: text; -webkit-background-clip: text; color: transparent; } .plan-note { font-size: 0.85rem; color: var(--muted); margin-top: 0.75rem; opacity: 0.8; }
