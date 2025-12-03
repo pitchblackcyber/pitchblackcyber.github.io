@@ -35,7 +35,7 @@ body {
   background:
     radial-gradient(1200px 600px at 10% -10%, rgba(122, 60, 255, 0.25), transparent 60%),
     radial-gradient(900px 500px at 110% 10%, rgba(0, 230, 255, 0.2), transparent 60%),
-    linear-gradient(180deg, #05060a 0%, #05060a 100%);
+    linear-gradient(180deg, #05060a 0%, #05060a 100%), url('images/background-image.jpg') center/cover no-repeat fixed;
   color: var(--text);
   line-height: 1.6;
 }
