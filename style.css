@@ -515,3 +515,88 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* ================================
+   Family Safety Page Layout Fix
+================================ */
+
+/* Override the default homepage/service-page 3-column main layout */
+main.family-page {
+  display: block;
+  max-width: var(--maxw);
+  margin: 1rem auto 3rem;
+  padding: 0 1rem;
+}
+
+/* Give family page sections normal vertical spacing */
+main.family-page > section {
+  margin-bottom: 1.25rem;
+}
+
+/* Intro cards near the top */
+.family-top-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 900px) {
+  .family-top-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Keep the learning cards readable */
+.family-page .service-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 800px) {
+  .family-page .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .family-page .service-grid {
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+  }
+}
+
+/* Prevent cards from becoming narrow vertical columns */
+.family-page .service-card {
+  min-width: 0;
+}
+
+/* Event details should be full-width and readable */
+.family-page .event-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 700px) {
+  .family-page .event-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1000px) {
+  .family-page .event-details {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Make the event card buttons center nicely */
+.family-page .event-card .cta-row {
+  justify-content: flex-start;
+}
+
+@media (max-width: 700px) {
+  .family-page .event-card .cta-row {
+    justify-content: center;
+  }
+}
