@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+
+  --color-deep-space: #0b0c10;
+  --color-elevated: #141724;
+  --color-brand-purple: #1c1546;
+  --color-brand-cyan: #18bfe4;
+  --color-brand-magenta: #ed1890;
+  --color-text-primary: #e8ebf7;
+  --color-text-muted: #b4b9cf;
+  --color-border-glass: rgba(255, 255, 255, 0.1);
+
+  --shadow-glow-cyan: 0 0 15px rgba(24, 191, 228, 0.5);
+  --shadow-glow-purple: 0 0 15px rgba(28, 21, 70, 0.5);
+}
+
+@utility glass {
+  background-color: rgba(20, 23, 36, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border-glass);
+}
+
+/* Base styles are applied via layout.tsx body classes, 
+   but we can add some global resets or custom scrollbar here if needed. */
+body {
+  margin: 0;
+}
