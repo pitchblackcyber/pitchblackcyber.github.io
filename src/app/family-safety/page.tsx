@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactForm from "@/components/ContactForm";
 
 export default function FamilySafety() {
   return (
@@ -114,39 +115,7 @@ export default function FamilySafety() {
       </section>
 
       {/* CTA / Contact Form */}
-      <section id="contact" className="glass rounded-3xl p-8 md:p-12 max-w-4xl mx-auto border-t-4 border-t-brand-magenta shadow-[0_20px_50px_rgba(0,0,0,0.4)] relative">
-        <div className="text-center mb-10 relative z-10">
-          <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white">Bring This Workshop to Your Group</h3>
-          <p className="text-text-muted max-w-2xl mx-auto">
-            We love partnering with local Cache Valley schools, churches, and community organizations to empower parents. Fill out the form below to request a workshop date or ask about our Private Setup service.
-          </p>
-        </div>
-        
-        <form className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
-          <div className="flex flex-col gap-2">
-            <label htmlFor="name" className="text-sm font-medium text-text-muted">Your Name</label>
-            <input type="text" id="name" required className="bg-[#0e1018] border border-border-glass rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-magenta focus:ring-1 focus:ring-brand-magenta transition-colors" placeholder="Jane Doe" />
-          </div>
-          <div className="flex flex-col gap-2">
-            <label htmlFor="email" className="text-sm font-medium text-text-muted">Email Address</label>
-            <input type="email" id="email" required className="bg-[#0e1018] border border-border-glass rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-magenta focus:ring-1 focus:ring-brand-magenta transition-colors" placeholder="jane@example.com" />
-          </div>
-          <div className="flex flex-col gap-2 md:col-span-2">
-            <label htmlFor="organization" className="text-sm font-medium text-text-muted">Organization / Group Name (Optional)</label>
-            <input type="text" id="organization" className="bg-[#0e1018] border border-border-glass rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-magenta focus:ring-1 focus:ring-brand-magenta transition-colors" placeholder="e.g. Cache Valley PTA" />
-          </div>
-          <div className="flex flex-col gap-2 md:col-span-2">
-            <label htmlFor="message" className="text-sm font-medium text-text-muted">How can we help?</label>
-            <textarea id="message" rows={4} required className="bg-[#0e1018] border border-border-glass rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-magenta focus:ring-1 focus:ring-brand-magenta transition-colors resize-none" placeholder="I'm interested in hosting a workshop..."></textarea>
-          </div>
-          <div className="md:col-span-2 flex justify-center mt-4">
-            <button type="submit" className="font-bold px-10 py-4 rounded-xl bg-gradient-to-r from-brand-magenta to-brand-purple text-white shadow-glow-magenta transition-transform hover:scale-105 w-full md:w-auto">
-              Send Message
-            </button>
-          </div>
-        </form>
-      </section>
-
+      <ContactForm />
     </div>
   );
 }

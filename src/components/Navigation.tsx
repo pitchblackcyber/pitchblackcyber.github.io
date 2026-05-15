@@ -31,19 +31,24 @@ export default function Navigation() {
         </Link>
 
         {/* Desktop Nav */}
-        <ul className="hidden md:flex items-center gap-6">
-          {navLinks.map((link) => (
-            <li key={link.name}>
-              <Link
-                href={link.href}
-                className={`transition-colors hover:text-white px-3 py-1.5 rounded-full hover:bg-brand-purple/20 ${pathname === link.href ? "text-brand-cyan" : "text-text-primary"
-                  }`}
-              >
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="hidden md:flex items-center gap-6">
+          <ul className="flex items-center gap-6">
+            {navLinks.map((link) => (
+              <li key={link.name}>
+                <Link
+                  href={link.href}
+                  className={`transition-colors hover:text-white px-3 py-1.5 rounded-full hover:bg-brand-purple/20 ${pathname === link.href ? "text-brand-cyan" : "text-text-primary"
+                    }`}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link href="#contact" className="px-5 py-2 text-sm font-bold rounded-xl bg-brand-cyan text-deep-space hover:bg-white transition-colors shadow-glow-cyan">
+            Request Consultation
+          </Link>
+        </div>
 
         {/* Hamburger Toggle */}
         <button
@@ -61,7 +66,7 @@ export default function Navigation() {
           className={`fixed inset-y-0 right-0 w-64 bg-[#0b0c10] border-l border-border-glass transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
             } md:hidden flex flex-col pt-20 px-6 z-50 shadow-2xl`}
         >
-          <ul className="flex flex-col gap-6">
+          <ul className="flex flex-col gap-6 mb-8">
             {navLinks.map((link) => (
               <li key={link.name}>
                 <Link
@@ -75,6 +80,9 @@ export default function Navigation() {
               </li>
             ))}
           </ul>
+          <Link href="#contact" onClick={() => setIsOpen(false)} className="px-5 py-3 text-center text-sm font-bold rounded-xl bg-brand-cyan text-deep-space hover:bg-white transition-colors shadow-glow-cyan">
+            Request Consultation
+          </Link>
         </div>
 
         {/* Mobile overlay backdrop */}
