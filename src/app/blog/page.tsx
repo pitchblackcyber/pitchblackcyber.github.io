@@ -1,45 +1,7 @@
 import Link from "next/link";
+import { posts } from "@/lib/posts";
 
 export default function Blog() {
-  const posts = [
-    {
-      title: "5 Simple Ways to Harden Your Cloud Infrastructure",
-      date: "May 10, 2026",
-      category: "Cloud Security",
-      excerpt: "Cloud misconfigurations are the leading cause of data breaches. Learn five practical steps to secure your AWS and Azure environments today.",
-    },
-    {
-      title: "Why Penetration Testing is Crucial for Small Businesses",
-      date: "April 22, 2026",
-      category: "Penetration Testing",
-      excerpt: "Small businesses are increasingly targeted by ransomware. Discover how regular penetration testing can identify gaps before attackers exploit them.",
-    },
-    {
-      title: "The Rise of AI-Powered Phishing Attacks",
-      date: "March 15, 2026",
-      category: "Threat Intelligence",
-      excerpt: "Attackers are using AI to craft highly convincing spear-phishing emails. Here is how your employees can spot them.",
-    },
-    {
-      title: "Navigating CMMC 2.0: What DoD Contractors Need to Know",
-      date: "February 28, 2026",
-      category: "Compliance",
-      excerpt: "The Cybersecurity Maturity Model Certification (CMMC) 2.0 is here. Understand the key changes and how to prepare your organization for the upcoming assessments.",
-    },
-    {
-      title: "Zero Trust Architecture: Moving Beyond the Perimeter",
-      date: "February 10, 2026",
-      category: "Architecture",
-      excerpt: "The traditional network perimeter is dead. Learn why implementing a Zero Trust Architecture is essential for modern businesses and how to get started.",
-    },
-    {
-      title: "Critical Patch Update: What You Need to Know About the Latest Windows Vulnerability",
-      date: "January 15, 2026",
-      category: "Patch Management",
-      excerpt: "A critical zero-day vulnerability has been discovered in Windows. Find out if your systems are affected and how to apply the emergency patch immediately.",
-    }
-  ];
-
   const categories = [
     "All Insights",
     "Cloud Security",
@@ -49,6 +11,10 @@ export default function Blog() {
     "Architecture",
     "Patch Management"
   ];
+
+  // Let's use the first post as the featured insight
+  const featuredPost = posts[5];
+  const gridPosts = posts.slice(0, 5);
 
   return (
     <div className="py-8">
@@ -73,13 +39,13 @@ export default function Blog() {
             <div>
               <div className="flex items-center gap-3 mb-4">
                  <span className="bg-brand-purple/20 text-brand-purple px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Emergency Alert</span>
-                 <p className="text-text-muted font-mono text-sm">May 14, 2026</p>
+                 <p className="text-text-muted font-mono text-sm">{featuredPost.date}</p>
               </div>
-              <h3 className="text-3xl font-bold text-white mb-4">Massive Ransomware Campaign Targets US Logistics Firms</h3>
+              <h3 className="text-3xl font-bold text-white mb-4">{featuredPost.title}</h3>
               <p className="text-text-muted leading-relaxed mb-6">
-                A highly coordinated ransomware campaign, dubbed &quot;NightOwl,&quot; is actively exploiting unpatched VPN gateways. Learn about the indicators of compromise (IoCs) and the immediate steps your organization must take to secure its perimeter.
+                {featuredPost.excerpt}
               </p>
-              <Link href="#" className="inline-block font-bold px-8 py-4 rounded-xl bg-gradient-to-r from-brand-purple to-brand-magenta text-white shadow-glow-purple transition-transform hover:scale-105">
+              <Link href={`/blog/${featuredPost.slug}`} className="inline-block font-bold px-8 py-4 rounded-xl bg-gradient-to-r from-brand-purple to-brand-magenta text-white shadow-glow-purple transition-transform hover:scale-105">
                 Read Full Advisory
               </Link>
             </div>
@@ -107,7 +73,7 @@ export default function Blog() {
 
       {/* Grid of Posts */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-        {posts.map((post, idx) => (
+        {gridPosts.map((post, idx) => (
           <article key={idx} className="glass rounded-2xl flex flex-col transition-transform hover:-translate-y-2 hover:shadow-glow-cyan border border-border-glass group">
             <div className="h-48 w-full bg-gradient-to-br from-[#0e1018] to-[#1a1c23] rounded-t-2xl border-b border-border-glass flex items-center justify-center relative overflow-hidden">
                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(24,191,228,0.1),transparent_70%)] opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"></div>
@@ -123,7 +89,7 @@ export default function Blog() {
               </div>
               <h3 className="text-xl font-bold mb-3 text-white group-hover:text-brand-cyan transition-colors line-clamp-2">{post.title}</h3>
               <p className="text-text-muted text-sm mb-6 flex-grow line-clamp-3">{post.excerpt}</p>
-              <Link href="#" className="font-bold text-white hover:text-brand-cyan transition-colors text-sm flex items-center gap-2 mt-auto">
+              <Link href={`/blog/${post.slug}`} className="font-bold text-white hover:text-brand-cyan transition-colors text-sm flex items-center gap-2 mt-auto">
                 Read Article <span className="transform group-hover:translate-x-1 transition-transform">&rarr;</span>
               </Link>
             </div>
