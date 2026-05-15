@@ -4,7 +4,7 @@ export default function ContactForm() {
       <div className="text-center mb-10 relative z-10">
         <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white">Get a Free Security Consultation</h3>
         <p className="text-text-muted max-w-2xl mx-auto">
-          Whether you need a full penetration test, compliance guidance, or just want to discuss your current security posture, our team is ready to help. Fill out the form below and we'll be in touch.
+          Whether you need a full penetration test, compliance guidance, or just want to discuss your current security posture, our team is ready to help. Fill out the form below and we&apos;ll be in touch.
         </p>
       </div>
       

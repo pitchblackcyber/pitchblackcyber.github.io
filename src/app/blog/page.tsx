@@ -77,7 +77,7 @@ export default function Blog() {
               </div>
               <h3 className="text-3xl font-bold text-white mb-4">Massive Ransomware Campaign Targets US Logistics Firms</h3>
               <p className="text-text-muted leading-relaxed mb-6">
-                A highly coordinated ransomware campaign, dubbed "NightOwl," is actively exploiting unpatched VPN gateways. Learn about the indicators of compromise (IoCs) and the immediate steps your organization must take to secure its perimeter.
+                A highly coordinated ransomware campaign, dubbed &quot;NightOwl,&quot; is actively exploiting unpatched VPN gateways. Learn about the indicators of compromise (IoCs) and the immediate steps your organization must take to secure its perimeter.
               </p>
               <Link href="#" className="inline-block font-bold px-8 py-4 rounded-xl bg-gradient-to-r from-brand-purple to-brand-magenta text-white shadow-glow-purple transition-transform hover:scale-105">
                 Read Full Advisory

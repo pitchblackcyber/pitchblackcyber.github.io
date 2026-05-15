@@ -1,4 +1,3 @@
-import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
 
 export default function BusinessServices() {
@@ -75,14 +74,14 @@ export default function BusinessServices() {
         </h1>
         <div className="glass p-6 md:p-8 rounded-2xl inline-block max-w-3xl relative z-10 border-brand-cyan/50 shadow-glow-cyan">
           <p className="text-lg md:text-xl text-white font-medium">
-            We don't sell fear. We deliver engineered solutions, clear roadmaps, and measurable risk reduction for your business.
+            We don&apos;t sell fear. We deliver engineered solutions, clear roadmaps, and measurable risk reduction for your business.
           </p>
         </div>
       </div>
 
       {/* Services List */}
       <div className="space-y-12 mb-24">
-        {services.map((service, index) => (
+        {services.map((service) => (
           <div key={service.id} className="glass rounded-3xl overflow-hidden border border-border-glass transition-all hover:border-brand-purple/50 hover:shadow-glow-purple relative group">
             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-purple/5 rounded-bl-[100px] transition-transform group-hover:scale-110 pointer-events-none"></div>
             
