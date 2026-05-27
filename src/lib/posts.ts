@@ -13,6 +13,37 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "hipaa-compliance-vs-security-readiness",
+    title: "The HIPAA Trap: Why a Checklist Doesn't Mean Your Patient Data is Secure",
+    date: "May 28, 2026",
+    category: "Compliance",
+    excerpt: "Many small clinics and healthcare-adjacent businesses in Utah fill out a compliance checklist and assume they are safe. Here is why true HIPAA readiness happens at the technical layer.",
+    content: `
+      <p>If you run a medical clinic, dental office, physical therapy practice, or even a local health-tech startup here in northern Utah, you’ve probably stared down the barrel of a HIPAA compliance checklist. You check the boxes, sign the policies, file the paperwork away in a cabinet, and breathe a sigh of relief. You’re "HIPAA compliant," right?</p>
+      <p>Not exactly. At Pitch Black Cyber, we talk to a lot of local owners who fall into this exact trap. They mistake administrative compliance for true technical security readiness.</p>
+      <p>The reality is that regulatory auditors and cybercriminals don't care about the paper in your cabinet. They care about your digital front door.</p>
+      <h3>The Three Pillars of the HIPAA Security Rule</h3>
+      <p>HIPAA isn't just one big rule; it’s broken down into three specific buckets of safeguards that protect Electronic Protected Health Information (ePHI):</p>
+      <ul>
+        <li><strong>Administrative Safeguards:</strong> This is your paperwork, your assigned security officer, your employee training, and your formal risk analyses.</li>
+        <li><strong>Physical Safeguards:</strong> This covers who can physically walk into your office, look at a screen, or pick up a server backup drive.</li>
+        <li><strong>Technical Safeguards:</strong> This is where the rubber meets the road. It covers data encryption in transit, multi-factor authentication (MFA), audit logging, and automatic screen locks.</li>
+      </ul>
+      <p>Most small businesses do a decent job with the administrative side, but completely miss the mark on the technical safeguards.</p>
+      <h3>Where the Checklist Fails You</h3>
+      <p>Let's say your checklist asks: <em>"Do you secure access to patient files?"</em> You check yes, because your staff uses a password to log into your EMR platform. </p>
+      <p>But a technical readiness review looks deeper. We ask: Is multi-factor authentication enforced globally? Are your local office firewalls isolating smart devices like TVs and wireless printers from the network where patient data flows? If a laptop leaves your clinic, is the local hard drive completely encrypted? Are user logs tracked so you can prove who accessed what file if a breach occurs?</p>
+      <p>Checking a box doesn't implement encryption. A piece of paper won't stop a phishing email from stealing an employee's password.</p>
+      <h3>How to Move Toward Real Readiness</h3>
+      <p>No legitimate cybersecurity provider can hand you a gold star and guarantee you are permanently "HIPAA compliant." Compliance is an ongoing operational habit, not a static destination.</p>
+      <p>Instead, focus on <strong>HIPAA Security Risk Assessments</strong>. Look at your actual data flows. Figure out exactly where patient information is created, stored, and transmitted in your daily routine. By mapping your technical controls directly to the actual HIPAA safeguards, you fix the real gaps before an audit or an attacker finds them for you.</p>
+    `,
+    ctaTitle: "Stop Guessing at Your HIPAA Safeguards",
+    ctaText: "We help healthcare-adjacent businesses and local clinics navigate compliance with confidence. Let's run a practical HIPAA Security Risk Assessment to map your technical environment directly to standard safeguards.",
+    ctaButtonText: "Schedule a Risk Assessment",
+    ctaLink: "/services#contact"
+  },
+  {
     slug: "5-simple-ways-to-harden-cloud",
     title: "5 Simple Ways to Harden Your Cloud Infrastructure",
     date: "May 10, 2026",
