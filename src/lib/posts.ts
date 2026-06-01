@@ -13,6 +13,41 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "parents-guide-home-wifi-security",
+    title: "The Digital Front Door: A Parent's Practical Guide to Home Wi-Fi Security",
+    date: "June 1, 2026",
+    category: "Family Safety",
+    excerpt: "You lock your physical front door every night, but what about your Wi-Fi? Learn three simple, jargon-free steps to secure your home network and protect your kids' devices.",
+    content: `
+      <p>As parents, we spend a lot of time worrying about what our kids are doing <em>on</em> their screens. We check app limits, talk about online predators, and try to monitor social media. But we often completely ignore the digital front door of our house: the internet router blinking quietly in the corner of the living room.</p>
+      <p>Every device in your house—from your child's iPad and your work laptop to the smart TV and the video doorbell—connects through that one box. If that box isn't secure, neither is your family's digital footprint.</p>
+      <p>The good news? You don't need a degree in IT to lock it down. Here are three practical, plain-English steps you can take this weekend to secure your home network.</p>
+      
+      <h3>1. Ditch the Default Passwords</h3>
+      <p>When you get a router from your internet provider, it comes with default passwords printed on a sticker on the back. There are actually two passwords you need to care about here:</p>
+      <ul>
+        <li><strong>The Wi-Fi Password:</strong> What you type in to connect your phone to the internet.</li>
+        <li><strong>The Admin Password:</strong> What you use to log into the router's settings to make changes.</li>
+      </ul>
+      <p>Most people change the Wi-Fi password but leave the Admin password as "admin" or "password." If you leave it as the default, anyone who guesses it can take over your network. Log into your router's app (or type its IP address into your browser) and change the Admin password to a strong, unique phrase.</p>
+
+      <h3>2. Turn on the "Guest Network" (And Not Just for Guests)</h3>
+      <p>Almost all modern routers have a "Guest Network" feature. This creates a secondary Wi-Fi signal that connects to the internet, but blocks devices from talking to each other. It’s like building a separate, secure hallway in your house.</p>
+      <p><strong>The Pro-Parent Move:</strong> Put all your "smart" devices (smart TVs, cheap smart plugs, video doorbells, and Alexas) on the Guest Network. These devices are notoriously easy to hack. If someone breaches your cheap smart bulb, the Guest Network prevents them from jumping over to your main network where you do your banking and where your kids' laptops live.</p>
+
+      <h3>3. Enable Router-Level Content Filtering</h3>
+      <p>Putting parental controls on a single iPad is great, but kids are smart. They will just use the smart TV browser or an old gaming console to bypass those rules. By setting up basic filtering <em>at the router level</em>, you block adult content and malicious websites before they ever reach a device in your home.</p>
+      <p>Many modern mesh systems (like Eero or Google Nest) have these settings built right into their smartphone apps. If you want a more robust setup, you can look into changing your router's "DNS settings" to a family-safe provider like OpenDNS Family Shield, which acts as a bouncer for your entire network.</p>
+      
+      <h3>You Don't Have to Do It Alone</h3>
+      <p>Securing a family in the digital age can feel overwhelming, but taking control of your Wi-Fi is one of the biggest steps you can take for your peace of mind.</p>
+    `,
+    ctaTitle: "Bring a Cyber Safety Workshop to Your Community",
+    ctaText: "Want to learn more practical ways to protect your family online? Pitch Black Cyber hosts judgment-free, plain-English workshops for schools, churches, and parent groups across Cache Valley and northern Utah.",
+    ctaButtonText: "Explore Family Workshops",
+    ctaLink: "/family-safety"
+  },
+  {
     slug: "hipaa-compliance-vs-security-readiness",
     title: "The HIPAA Trap: Why a Checklist Doesn't Mean Your Patient Data is Secure",
     date: "May 28, 2026",
