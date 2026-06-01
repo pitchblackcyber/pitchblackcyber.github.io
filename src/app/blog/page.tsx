@@ -13,8 +13,8 @@ export default function Blog() {
   ];
 
   // Let's use the first post as the featured insight
-  const featuredPost = posts[5];
-  const gridPosts = posts.slice(0, 5);
+  const featuredPost = posts[1];
+  const gridPosts = posts.slice(0, 9);
 
   return (
     <div className="py-8">
