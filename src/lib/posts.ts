@@ -13,6 +13,40 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "device-security-while-traveling",
+    title: "The Travel Checklist: 4 Practical Ways to Secure Your Devices on the Road",
+    date: "June 2, 2026",
+    category: "Cybersecurity",
+    excerpt: "Whether you're leaving Cache Valley for a business conference or a family summer road trip, here are four simple ways to keep your data safe while traveling.",
+    content: `
+      <p>It's that time of year. Families are packing up the car for road trips, and business professionals are flying out to summer conferences. You probably have a checklist for your luggage, your hotel reservations, and your itinerary. But do you have a checklist for your devices?</p>
+      <p>When you take your laptop, tablet, or smartphone outside the safety of your home or office network, the rules change. Hackers know that travelers are often distracted, rushed, and looking for free Wi-Fi. </p>
+      <p>Fortunately, you don't need to leave your tech at home to stay safe. Here are four highly practical steps to secure your digital life on the road.</p>
+      
+      <h3>1. Be Ruthless About Public Wi-Fi</h3>
+      <p>We've all been there: you're sitting in the airport terminal or checking into a hotel, and the first thing you do is connect to the free "Guest Wi-Fi." The problem is that open networks are essentially public broadcasting stations. Without proper encryption, it is incredibly easy for someone sitting nearby to intercept what you are doing.</p>
+      <p><strong>The Fix:</strong> The safest option is to use your smartphone's personal hotspot. If you absolutely must use hotel or airport Wi-Fi, use a reputable Virtual Private Network (VPN) to scramble your data. And never log into your bank or sensitive work portals on an open network without one.</p>
+
+      <h3>2. Skip the Public USB Charging Stations</h3>
+      <p>You see them in airports, coffee shops, and hotel lobbies—those convenient USB ports right in the wall. While tempting, USB cables transmit both power <em>and</em> data. Criminals can tamper with these public ports to install malware on your phone or quietly siphon off data while you charge (a tactic known as "juice jacking").</p>
+      <p><strong>The Fix:</strong> Always plug directly into a standard electrical outlet using your own charging brick. Better yet, pack a portable battery power bank to keep your devices charged on the go.</p>
+
+      <h3>3. Encrypt and Lock Down Physical Devices</h3>
+      <p>Digital hacking gets all the headlines, but simple physical theft is one of the biggest risks during travel. A laptop left in a rental car or a phone left on a restaurant table is a massive liability, especially if it holds patient data or business financials.</p>
+      <p><strong>The Fix:</strong> Make sure your screens auto-lock after 1-2 minutes of inactivity and require a PIN, face, or fingerprint scan to open. For business laptops, ensure full-disk encryption (like Windows BitLocker or Mac FileVault) is turned on. If the device is stolen, encryption ensures the thief gets a useless brick rather than your data.</p>
+      
+      <h3>4. Run Your Updates Before You Leave</h3>
+      <p>Software updates usually include security patches for newly discovered vulnerabilities. You don't want to be forced into a massive, hour-long update while running on a slow hotel Wi-Fi connection.</p>
+      <p><strong>The Fix:</strong> The night before you leave, plug your devices in at home and run all pending operating system and app updates on your secure home network.</p>
+      
+      <p>Travel is stressful enough without worrying about a compromised bank account or a business data breach. Take ten minutes to prep your tech, and then go enjoy your trip.</p>
+    `,
+    ctaTitle: "Is Your Business Fleet Ready for Travel?",
+    ctaText: "If your employees are taking company laptops on the road this summer, make sure they are protected. Pitch Black Cyber helps local businesses implement endpoint protection, encryption, and secure remote access.",
+    ctaButtonText: "Review Your Security Controls",
+    ctaLink: "/services"
+  },
+  {
     slug: "parents-guide-home-wifi-security",
     title: "The Digital Front Door: A Parent's Practical Guide to Home Wi-Fi Security",
     date: "June 1, 2026",
