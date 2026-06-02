@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pitch Black Cyber | Official Website
 
-## Getting Started
+Welcome to the official repository for **Pitch Black Cyber** (pitchblackcyber.com). 
 
-First, run the development server:
+Pitch Black Cyber is a local cybersecurity and IT consulting business based in Cache Valley, Utah. We focus on helping small businesses, healthcare clinics, and families navigate cybersecurity, HIPAA compliance, and digital safety in plain English—without the enterprise jargon or fearmongering.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This repository houses our public-facing website, blog, and service portfolio. It is designed to act as a fast, secure, and accessible "Mission Control" for our clients.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Core Business Pillars Represented in this Codebase
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The site architecture is built around our three main service areas:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Small Business Cybersecurity & IT:** Practical assessments, endpoint protection, and IT hardening for local businesses. (`src/app/services`)
+2. **Compliance Security Readiness:** Translating complex cyber safeguards (Administrative, Physical, Technical) into actionable security roadmaps for businesses. (`src/app/services`)
+3. **Family Cyber Safety:** Parent-focused education, home network router hardening, and community workshops to protect kids online. (`src/app/family-safety`)
 
-## Learn More
+## 🛠 Tech Stack & Architecture
 
-To learn more about Next.js, take a look at the following resources:
+While the focus of this site is the content and the community, it is built on a modern, highly performant web stack:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* **Framework:** [Next.js](https://nextjs.org/) (React)
+* **Styling:** Tailwind CSS (Customized with our "Dark Space / Cyber" brand palette: Deep Black, Cyan, Magenta, and Purple)
+* **Architecture:** Static Site Generation (SSG). The site is exported as pure, static HTML/CSS/JS for maximum speed and security.
+* **Hosting/Deployment:** GitHub Pages via automated GitHub Actions.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📝 How to Manage Content (Blog Posts)
 
-## Deploy on Vercel
+Our blog is completely statically generated. You do not need a complex CMS to add new articles or workshop announcements.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To add a new blog post:
+1. Open `src/lib/posts.ts`.
+2. Add a new object to the `posts` array using the existing format (requires a `slug`, `title`, `date`, `category`, `excerpt`, and HTML `content`).
+3. Commit and push your changes to the `main` branch. 
+4. The site will automatically rebuild and generate the new page at `/blog/your-new-slug`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Deployment
+
+This site uses GitHub Actions (`.github/workflows/deploy.yml`) to automatically build and deploy to GitHub Pages whenever code is pushed to the `main` branch. Because it relies on Next.js Static Export, ensure `output: 'export'` remains in the `next.config.ts` file.
+
+---
+*Securing the Dark Spaces. Proudly serving Cache Valley and Northern Utah.*
