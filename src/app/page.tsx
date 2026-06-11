@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm";
+import LeadMagnetForm from "@/components/LeadMagnetForm";
 
 export default function Home() {
   return (
@@ -154,21 +155,7 @@ export default function Home() {
                <li className="flex items-center gap-2 text-white/80"><span className="text-brand-cyan">✓</span> Establish bulletproof backups</li>
             </ul>
           </div>
-          <div className="glass p-8 rounded-2xl border-brand-cyan/30">
-            <h4 className="text-xl font-bold text-white mb-4">Send Me The Free Guide</h4>
-            <form className="space-y-4">
-              <div>
-                <input type="text" placeholder="Your Name" required className="w-full bg-[#0e1018] border border-border-glass rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-cyan focus:ring-1" />
-              </div>
-              <div>
-                <input type="email" placeholder="Business Email" required className="w-full bg-[#0e1018] border border-border-glass rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-cyan focus:ring-1" />
-              </div>
-              <button type="submit" className="w-full font-bold px-6 py-4 rounded-xl bg-brand-cyan text-deep-space hover:bg-white transition-colors">
-                Download Now
-              </button>
-            </form>
-            <p className="text-xs text-text-muted mt-4 text-center">We respect your privacy. No spam, ever.</p>
-          </div>
+          <LeadMagnetForm />
         </div>
       </section>
 

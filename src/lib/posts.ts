@@ -13,6 +13,40 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "patch-tuesday-explained",
+    title: "Patch Tuesday Explained: Why You Need to Stop Ignoring That Restart Button",
+    date: "June 11, 2026",
+    category: "Cybersecurity",
+    excerpt: "We all hate the 'Update and Restart' popup, but the second Tuesday of every month is the most important day for your digital safety. Here is why.",
+    content: `
+      <p>We’ve all been there. You are in the middle of a busy workday, or just sitting down to watch a show, and that little notification pops up in the corner of your screen: <em>"Updates are ready to install. Restart now?"</em></p>
+      <p>If you are like most people, your immediate reaction is to click "Remind me tomorrow." And then you click it again the next day. And the next. But in the cybersecurity world, hitting snooze on those updates is the digital equivalent of leaving your front door wide open.</p>
+      
+      <h3>What is "Patch Tuesday"?</h3>
+      <p>Over two decades ago, Microsoft realized that constantly throwing random updates at users was driving everyone crazy. To make things predictable, they decided to release all their major software fixes on a single day: the second Tuesday of every month. This became known in the IT industry as <strong>Patch Tuesday</strong>.</p>
+      <p>Today, it’s not just Microsoft. Adobe, Apple, and many other major tech companies often coordinate their security updates around this same time. </p>
+
+      <h3>Why These Updates Actually Matter</h3>
+      <p>When most people think of a software update, they think of visual changes—a new layout, a new feature, or a different colored menu. But the vast majority of what happens on Patch Tuesday is invisible. These updates are fixing newly discovered vulnerabilities in the code.</p>
+      <p>Here is the reality: when a tech company releases a "patch" to fix a security hole, they are essentially publishing a map of that hole for the entire world to see. Cybercriminals immediately look at the patch, figure out exactly how the vulnerability works, and then start scanning the internet for small businesses and home networks that <em>haven't</em> installed the update yet.</p>
+      <p>If you wait two weeks to restart your computer, you are giving bad actors a two-week head start to exploit a known problem.</p>
+
+      <h3>Three Practical Steps for Your Home and Business</h3>
+      <p>You don't need to be an IT expert to stay ahead of this. Just follow these three simple rules:</p>
+      <ul>
+        <li><strong>Turn on Auto-Updates:</strong> Go into the settings of your Windows PC, Mac, and smartphone, and ensure "Automatic Updates" is toggled on. The device will usually try to do the heavy lifting while you are asleep.</li>
+        <li><strong>Make "Wednesday Restart" a Habit:</strong> Since the patches come out on Tuesday, make a habit of shutting your computer completely down (not just closing the lid) when you finish work on Tuesday or Wednesday evening. This forces the system to apply the new protections.</li>
+        <li><strong>Don't Forget Your Browser:</strong> Google Chrome, Safari, and Microsoft Edge are your primary windows to the internet. If you see a little "Update" button glowing in the top right corner of your browser, click it immediately. It usually takes less than 10 seconds to restart the browser.</li>
+      </ul>
+      
+      <p>Good cybersecurity doesn't always require expensive software. Often, it just requires a little bit of digital hygiene. Next time that popup appears, take the five minutes to restart. It is the easiest, cheapest way to protect your data.</p>
+    `,
+    ctaTitle: "Tired of Managing Updates for Your Staff?",
+    ctaText: "Relying on employees to update their own computers is a massive risk for small businesses. Pitch Black Cyber offers professional endpoint management to ensure your entire Cache Valley business is patched, protected, and monitored silently in the background.",
+    ctaButtonText: "Explore IT Support Options",
+    ctaLink: "/services"
+  },
+  {
     slug: "device-security-while-traveling",
     title: "The Travel Checklist: 4 Practical Ways to Secure Your Devices on the Road",
     date: "June 2, 2026",
