@@ -13,6 +13,41 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "cmmc-nist-compliance-readiness",
+    title: "Navigating CMMC and NIST 800-171: A Practical Path for Defense Contractors",
+    date: "June 23, 2026",
+    category: "Compliance",
+    excerpt: "Regulatory fines and the threat of lost DoD contracts can be overwhelming. Learn how a practical approach to NIST 800-171 and CMMC readiness can protect your business and your revenue.",
+    content: `
+      <p>If your business is part of the Department of Defense (DoD) supply chain, you already know that cybersecurity is no longer just an IT issue—it is a baseline requirement for doing business. Regulatory fines and lost DoD contracts due to non-compliance can devastate a growing company.</p>
+      <p>However, navigating the complex requirements of NIST 800-171 and the Cybersecurity Maturity Model Certification (CMMC) can feel completely overwhelming. Many contractors find themselves drowning in acronyms, confusing technical controls, and paralyzing compliance frameworks.</p>
+      <p>At Pitch Black Cyber, we believe that protecting your business and preparing for compliance shouldn't require a degree in regulatory law. It requires a practical, structured approach.</p>
+
+      <h3>Our Approach to Compliance Readiness</h3>
+      <p>We don't just hand you a massive spreadsheet and wish you luck. We work alongside your team to conduct a thorough readiness assessment, mapping your actual technical environment against the required DoD controls.</p>
+      <p>Our process is grounded in reality:</p>
+      <ul>
+        <li><strong>We interview stakeholders</strong> to understand how data actually moves through your business on a daily basis.</li>
+        <li><strong>We review your existing policies</strong> to see where administrative safeguards align with NIST requirements.</li>
+        <li><strong>We inspect technical configurations</strong> to validate that access controls, logging, and endpoint protections are genuinely functioning as intended.</li>
+      </ul>
+
+      <h3>The Outcome: Clear Next Steps</h3>
+      <p>The goal of our assessment is to turn regulatory complexity into a clear, actionable roadmap. At the end of the engagement, you aren't left guessing. We deliver three critical operational documents:</p>
+      <ul>
+        <li><strong>A Gap Analysis Report:</strong> A plain-English breakdown of exactly where your current security posture falls short of NIST 800-171 requirements.</li>
+        <li><strong>A System Security Plan (SSP):</strong> The foundational blueprint of your security environment, detailing how your organization currently meets specific security requirements. (This is a mandatory requirement for DoD contractors).</li>
+        <li><strong>A Plan of Action and Milestones (POA&M):</strong> A prioritized, practical to-do list. We rank remediation tasks by business impact and implementation effort, giving you a straightforward path to improving your security maturity.</li>
+      </ul>
+
+      <p>Compliance doesn't happen overnight, and no one can hand you a magic "certified" badge without putting in the work. But with the right local partner, you can tackle NIST 800-171 readiness with confidence, protect your sensitive data, and secure your place in the DoD supply chain.</p>
+    `,
+    ctaTitle: "Protect Your Contracts and Your Data",
+    ctaText: "Don't let compliance requirements put your DoD revenue at risk. Pitch Black Cyber provides practical readiness assessments, control mapping, and remediation guidance for defense contractors.",
+    ctaButtonText: "Schedule a Readiness Assessment",
+    ctaLink: "/services"
+  },
+  {
     slug: "patch-tuesday-explained",
     title: "Patch Tuesday Explained: Why You Need to Stop Ignoring That Restart Button",
     date: "June 11, 2026",

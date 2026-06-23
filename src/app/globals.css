@@ -1,30 +1,75 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-inter);
+  --font-sans: var(--font-outfit);
   --font-mono: var(--font-jetbrains-mono);
 
-  --color-deep-space: #0b0c10;
-  --color-elevated: #141724;
-  --color-brand-purple: #1c1546;
-  --color-brand-cyan: #18bfe4;
-  --color-brand-magenta: #ed1890;
-  --color-text-primary: #e8ebf7;
-  --color-text-muted: #b4b9cf;
-  --color-border-glass: rgba(255, 255, 255, 0.1);
+  /* Background family — Navy-tinted dark, consistent cool base */
+  --color-void:    #070810;
+  --color-surface: #0b0d18;
+  --color-card:    #0f1228;
+  --color-navy:    #1c1546;
+  --color-panel:   #191c38;
 
-  --shadow-glow-cyan: 0 0 15px rgba(24, 191, 228, 0.5);
-  --shadow-glow-purple: 0 0 15px rgba(28, 21, 70, 0.5);
+  /* PRIMARY accent — Brand Cyan */
+  --color-cyan:       #18bee3;
+  --color-cyan-dim:   #0f8fac;
+  
+  /* SECONDARY accent — Brand Magenta */
+  --color-magenta:     #ec1990;
+  --color-magenta-dim: #b8126e;
+
+  /* Text */
+  --color-text-primary:   #eef0fb;
+  --color-text-secondary: #9499c4;
+  --color-text-muted:     #585d88;
+
+  /* Surfaces */
+  --color-border:         rgba(255, 255, 255, 0.07);
+  --color-border-cyan:    rgba(24, 190, 227, 0.3);
+  --color-border-magenta: rgba(236, 25, 144, 0.2);
+
+  /* Shadows */
+  --shadow-glow-cyan: 0 0 20px rgba(24, 190, 227, 0.35);
+  --shadow-glow-magenta: 0 0 20px rgba(236, 25, 144, 0.25);
 }
 
 @utility glass {
-  background-color: rgba(20, 23, 36, 0.4);
+  background-color: rgba(15, 18, 40, 0.4);
   backdrop-filter: blur(12px);
-  border: 1px solid var(--color-border-glass);
+  border: 1px solid var(--color-border);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
-/* Base styles are applied via layout.tsx body classes, 
-   but we can add some global resets or custom scrollbar here if needed. */
+@utility glass-panel {
+  background-color: rgba(28, 21, 70, 0.4); /* Navy tinted */
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--color-border);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Base styles */
 body {
   margin: 0;
+  scroll-behavior: smooth;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Optional noise overlay for texture */
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.02;
 }
